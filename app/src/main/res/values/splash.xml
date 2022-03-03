@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/red</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/qurba_logo</item>
+        <item name="android:duration">@integer/m3_sys_motion_duration_long2</item>
+        <item name="postSplashScreenTheme">@style/Theme.ComposePocTask</item>
+    </style>
+</resources>
