@@ -8,3 +8,6 @@ dependencyResolutionManagement {
 }
 rootProject.name = "ComposePocTask"
 include ':app'
+include ':core'
+include ':data'
+include ':presentation'
