@@ -10,4 +10,6 @@ object AndroidX {
 
     private const val splashScreenVersion = "1.0.0-beta01"
     const val splashScreen = "androidx.core:core-splashscreen:$splashScreenVersion"
+
+
 }
