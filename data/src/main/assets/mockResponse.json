@@ -1,0 +1,270 @@
+[
+  {
+    "post": {
+      "type": "single",
+      "author": {
+        "type": "user",
+        "name": "Jim Halpert",
+        "image": "drawable.drawable_name"
+      },
+      "post_description": "qui pariatur duis labore duis aliquip incididunt ut ipsum ipsum nisi excepteur ipsum duis amet",
+      "post_images": [
+        "drawable.drawable_name"
+      ],
+      "post_footer": {
+        "title": "consectetur commodo ad",
+        "category": "Mcdonald's"
+      },
+      "statistics": {
+        "likes_numbers": 528,
+        "comments_numbers": 256,
+        "shares_numbers": 33,
+        "created_at": "2022-02-10 14:43:44",
+        "comments": [
+          {
+            "description": "do incididunt laboris",
+            "created_at": "2021-08-27 18:52:42",
+            "user": {
+              "user_name": "Pamela Peasly",
+              "photo": "drawable.drawable_name"
+            },
+            "likes": 3
+          }
+        ]
+      },
+      "nested_post": {}
+    }
+  },
+  {
+    "post": {
+      "type": "single",
+      "author": {
+        "type": "restaurant",
+        "name": "Creed Braton",
+        "image": "drawable.drawable_name"
+      },
+      "post_description": "in eu tempor sit consectetur ut ea veniam cupidatat incididunt pariatur ipsum cillum cupidatat exercitation aliqua",
+      "post_images": [
+        "drawable.drawable_name",
+        "drawable.drawable_name",
+        "drawable.drawable_name"
+      ],
+      "post_footer": {
+        "title": "excepteur Lorem",
+        "category": "cafe & restaurants"
+      },
+      "statistics": {
+        "likes_numbers": 282,
+        "comments_numbers": 49,
+        "shares_numbers": 455,
+        "created_at": "2022-02-22 09:10:54",
+        "comments": [
+          {
+            "description": "incididunt laboris excepteur do dolore nisi aliqua mollit fugiat",
+            "created_at": "2021-07-19 18:01:27",
+            "user": {
+              "user_name": "Toby Flenderson",
+              "photo": "drawable.drawable_name"
+            },
+            "likes": 3
+          }
+        ]
+      },
+      "nested_post": {}
+    }
+  },
+  {
+    "post": {
+      "type": "single",
+      "author": {
+        "type": "restaurant",
+        "name": "Pam Peasly",
+        "image": "/var/spool/deposit_granite_attitude.hbci.psb"
+      },
+      "post_description": "culpa dolor ad nisi commodo mollit sit ut laborum fugiat laboris",
+      "post_images": [
+        "drawable.drawable_name"
+      ],
+      "post_footer": {
+        "title": "quis aliqua ex qui",
+        "category": "cafe & restaurants"
+      },
+      "statistics": {
+        "likes_numbers": 528,
+        "comments_numbers": 13,
+        "shares_numbers": 166,
+        "created_at": "2022-02-21 03:15:11",
+        "comments": [
+          {
+            "description": "pariatur voluptate esse occaecat culpa",
+            "created_at": "2021-06-18 16:25:21",
+            "user": {
+              "user_name": "Kevin Malone",
+              "photo": "drawable.drawable_name"
+            },
+            "likes": 2
+          },
+          {
+            "description": "anim ea",
+            "created_at": "2021-05-17 14:41:19",
+            "user": {
+              "user_name": "Dwight Schrute",
+              "photo": "drawable.drawable_name"
+            },
+            "likes": 1
+          }
+        ]
+      },
+      "nested_post": {}
+    }
+  },
+  {
+    "post": {
+      "type": "single",
+      "author": {
+        "type": "restaurant",
+        "name": "Ricky Gerves",
+        "image": "/private/decentralized_concrete.mk3d.mfm"
+      },
+      "post_description": "labore irure dolor do culpa eu",
+      "post_images": [
+        "drawable.drawable_name"
+      ],
+      "post_footer": {
+        "title": "nostrud enim labore Lorem magna",
+        "category": "cafe & restaurants"
+      },
+      "statistics": {
+        "likes_numbers": 609,
+        "comments_numbers": 182,
+        "shares_numbers": 227,
+        "created_at": "2022-02-22 03:12:35",
+        "comments": [
+          {
+            "description": "consequat ad do qui voluptate incididunt Lorem incididunt minim consequat",
+            "created_at": "2021-10-05 23:25:33",
+            "user": {
+              "user_name": "Micheal Scott",
+              "photo": "drawable.drawable_name"
+            },
+            "likes": 2
+          },
+          {
+            "description": "aliqua cupidatat ex occaecat nulla esse eiusmod",
+            "created_at": "2022-01-23 09:25:20",
+            "user": {
+              "user_name": "Aliza86",
+              "photo": "drawable.drawable_name"
+            },
+            "likes": 4
+          }
+        ]
+      },
+      "nested_post": {}
+    }
+  },
+  {
+    "post": {
+      "type": "single",
+      "author": {
+        "type": "restaurant",
+        "name": "Meridith Palmer",
+        "image": "/private/decentralized_concrete.mk3d.mfm"
+      },
+      "post_description": "labore irure dolor do culpa eu",
+      "post_images": [
+        "drawable.drawable_name"
+      ],
+      "post_footer": {
+        "title": "nostrud enim labore Lorem magna",
+        "category": "cafe & restaurants"
+      },
+      "statistics": {
+        "likes_numbers": 56,
+        "comments_numbers": 22,
+        "shares_numbers": 32,
+        "created_at": "2022-02-22 03:12:35",
+        "comments": [
+          {
+            "description": "consequat ad do qui voluptate incididunt Lorem incididunt minim consequat",
+            "created_at": "2021-10-05 23:25:33",
+            "user": {
+              "user_name": "Mahmoud Alim",
+              "photo": "drawable.drawable_name"
+            },
+            "likes": 1
+          }
+        ]
+      },
+      "nested_post": {}
+    }
+  },
+  {
+    "post": {
+      "type": "nested",
+      "author": {
+        "type": "restaurant",
+        "name": "Meridith Palmer",
+        "image": "/private/decentralized_concrete.mk3d.mfm"
+      },
+      "post_description": "labore irure dolor do culpa eu",
+      "post_images": [
+        "drawable.drawable_name"
+      ],
+      "post_footer": {
+        "title": "nostrud enim labore Lorem magna",
+        "category": "cafe & restaurants"
+      },
+      "statistics": {
+        "likes_numbers": 56,
+        "comments_numbers": 22,
+        "shares_numbers": 32,
+        "created_at": "2022-02-22 03:12:35",
+        "comments": [
+          {
+            "description": "consequat ad do qui voluptate incididunt Lorem incididunt minim consequat",
+            "created_at": "2021-10-05 23:25:33",
+            "user": {
+              "user_name": "Mahmoud Alim",
+              "photo": "drawable.drawable_name"
+            },
+            "likes": 1
+          }
+        ]
+      },
+      "nested_post": {
+        "type": "single",
+        "author": {
+          "type": "restaurant",
+          "name": "Meridith Palmer",
+          "image": "/private/decentralized_concrete.mk3d.mfm"
+        },
+        "post_description": "labore irure dolor do culpa eu",
+        "post_images": [
+          "drawable.drawable_name"
+        ],
+        "post_footer": {
+          "title": "nostrud enim labore Lorem magna",
+          "category": "cafe & restaurants"
+        },
+        "statistics": {
+          "likes_numbers": 56,
+          "comments_numbers": 22,
+          "shares_numbers": 32,
+          "created_at": "2022-02-22 03:12:35",
+          "comments": [
+            {
+              "description": "consequat ad do qui voluptate incididunt Lorem incididunt minim consequat",
+              "created_at": "2021-10-05 23:25:33",
+              "user": {
+                "user_name": "Mahmoud Alim",
+                "photo": "drawable.drawable_name"
+              },
+              "likes": 1
+            }
+          ]
+        }
+      }
+    }
+  }
+]
