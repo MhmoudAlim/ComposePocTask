@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk ProjectConfig.compileSdk
 
     defaultConfig {
         minSdk ProjectConfig.minSdk
@@ -35,7 +35,4 @@ dependencies {
     implementation AndroidX.coreKtx
     implementation AndroidX.appCompat
 
-    testImplementation 'junit:junit:4.+'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 }
