@@ -7,6 +7,7 @@ import androidx.compose.material.Surface
 import androidx.compose.ui.graphics.Color
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.mahmoudalim.composepoctask.ui.theme.ComposePocTaskTheme
+import com.mahmoudalim.presentation.compose.AppScaffoldHome
 import com.mahmoudalim.presentation.compose.ShimmerSkeletonView
 
 class MainActivity : ComponentActivity() {
@@ -17,7 +18,9 @@ class MainActivity : ComponentActivity() {
             ComposePocTaskTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(color = Color.White) {
-                    ShimmerSkeletonView()
+                    AppScaffoldHome() {
+                        ShimmerSkeletonView()
+                    }
                 }
             }
         }
