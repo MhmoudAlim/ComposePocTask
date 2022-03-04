@@ -29,6 +29,14 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    buildFeatures {
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion Compose.composeVersion
+        kotlinCompilerVersion Kotlin.version
+    }
 }
 
 dependencies {
@@ -42,6 +50,8 @@ dependencies {
     implementation Compose.uiToolingPreview
     implementation Compose.lifecycle
     implementation Compose.activityCompose
+    implementation Coil.coilCompose
+
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
