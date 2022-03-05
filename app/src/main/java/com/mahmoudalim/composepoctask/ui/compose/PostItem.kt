@@ -1,10 +1,7 @@
 package com.mahmoudalim.composepoctask.ui.compose
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material.Text
+import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -13,12 +10,15 @@ import com.mahmoudalim.data.models.ResponseItem
 
 @Composable
 fun PostItem(post: ResponseItem) {
-    Box(
+    Column(
         Modifier
-            .padding(vertical = 8.dp)
-            .fillMaxWidth()
+            .padding(bottom = 4.dp)
             .background(Color.White)
     ) {
-        Text(text = post.post.postDescription)
+        Spacer(modifier = Modifier.height(12.dp))
+        PostHeader(post)
+        PostContent(post)
+        PostFooter(post)
+        Spacer(modifier = Modifier.height(12.dp))
     }
 }
