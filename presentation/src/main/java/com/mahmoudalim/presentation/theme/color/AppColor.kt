@@ -10,4 +10,5 @@ object AppColor {
     val ButtonTextColor = "#8A50DE".hexColor()
     val ButtonGradiantStartColor = "#406AE7".hexColor()
     val ButtonGradiantEndColor = "#C63AD6".hexColor()
+    val AppCardBgColor = "#EFF2F5".hexColor()
 }
