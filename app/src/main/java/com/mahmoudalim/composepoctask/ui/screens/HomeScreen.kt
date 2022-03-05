@@ -2,10 +2,12 @@ package com.mahmoudalim.composepoctask.ui.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material.AppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Modifier
@@ -36,9 +38,11 @@ private fun HomeScreenContent(response: Response) {
     Column(Modifier.fillMaxSize()) {
         AppSearchBar()
         LazyColumn(
-            Modifier
+            contentPadding = PaddingValues(bottom = 56.dp),
+            modifier = Modifier
                 .background(AppColor.AppGrayBGColor.copy(0.5f))
-                .padding(top = 4.dp)) {
+                .padding(top = 4.dp)
+        ) {
             items(response) {
                 PostItem(it)
             }

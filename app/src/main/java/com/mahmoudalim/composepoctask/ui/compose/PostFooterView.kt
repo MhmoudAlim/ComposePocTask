@@ -16,7 +16,7 @@ fun PostFooterView(post: ResponseItem) {
     Column(
         Modifier
             .fillMaxWidth()
-            .padding(horizontal = 16.dp, vertical = 12.dp)
+            .padding(top = 12.dp, start = 16.dp , end = 16.dp)
     ) {
         PostFooterDescriptionView(post)
         PostFooterStatisticsView(post)

@@ -5,7 +5,7 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Divider
 import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
@@ -42,9 +42,13 @@ fun PostFooterStatisticsView(post: ResponseItem) {
 }
 
 @Composable
-private fun LikesView(likes: Int?) {
-    Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.clickable { }) {
-        Text(text = "$likes", modifier = Modifier.padding(end = 4.dp))
+private fun LikesView(likes: Int) {
+    var likesNumbers by remember { mutableStateOf(likes) }
+
+    Row(
+        verticalAlignment = Alignment.CenterVertically,
+        modifier = Modifier.clickable { likesNumbers++ }) {
+        Text(text = "$likesNumbers", modifier = Modifier.padding(end = 4.dp))
         Image(
             painter = painterResource(id = R.drawable.ic_likes),
             contentDescription = stringResource(
