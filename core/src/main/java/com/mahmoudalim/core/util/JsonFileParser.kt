@@ -1,4 +1,4 @@
-package com.mahmoudalim.data.util
+package com.mahmoudalim.core.util
 
 import android.content.Context
 import java.io.IOException

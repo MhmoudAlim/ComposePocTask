@@ -1,4 +1,4 @@
-package com.mahmoudalim.core.navigation
+package com.mahmoudalim.composepoctask.navigation
 
 /**
  * Created by Mahmoud Alim on 04/03/2022.
