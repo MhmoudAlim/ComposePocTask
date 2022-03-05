@@ -63,6 +63,7 @@ dependencies {
     implementation Compose.activityCompose
     implementation Google.gson
     implementation Compose.navigation
+    implementation Koin.android
 
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$Compose.composeVersion"
     debugImplementation "androidx.compose.ui:ui-tooling:$Compose.composeVersion"

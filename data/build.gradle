@@ -36,5 +36,6 @@ dependencies {
 
     implementation Koin.android
     implementation Google.gson
-    
+    implementation Coroutines.coroutines
+
 }
