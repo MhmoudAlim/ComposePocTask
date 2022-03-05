@@ -12,7 +12,7 @@ import java.nio.charset.Charset
 object JsonFileParser {
 
     private const val CHARSET = "UTF-8"
-    const val JSON_FILE_NAME = "mockResponse.json"
+    private const val JSON_FILE_NAME = "mockResponse.json"
 
     operator fun invoke(context: Context, fileName: String = JSON_FILE_NAME): String? {
 
@@ -20,12 +20,14 @@ object JsonFileParser {
             val stream: InputStream = context.assets.open(fileName)
             val size: Int = stream.available()
             val buffer = ByteArray(size)
-            stream.read(buffer)
-            stream.close()
+            stream.apply {
+                read(buffer)
+                close()
+            }
             String(buffer, Charset.forName(CHARSET))
         } catch (e: IOException) {
             e.printStackTrace()
-            return null
+            return e.message
         }
         return jsonString
     }
