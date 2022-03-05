@@ -2,6 +2,7 @@ package com.mahmoudalim.composepoctask.app
 
 import android.app.Application
 import com.mahmoudalim.composepoctask.di.injectAppModule
+import com.mahmoudalim.core.date.AppThreeTenDate
 import com.mahmoudalim.data.di.injectDataModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -16,6 +17,7 @@ class App : Application() {
     override fun onCreate() {
         super.onCreate()
         initKoin()
+        AppThreeTenDate.setup(this)
     }
 
     private fun initKoin() {
