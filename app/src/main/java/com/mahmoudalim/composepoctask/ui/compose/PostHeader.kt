@@ -12,6 +12,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.annotation.ExperimentalCoilApi
@@ -35,7 +36,7 @@ fun PostHeader(post: ResponseItem) {
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.Start
     ) {
-        AuthorImage(post)
+        AppProfileImage(post.post.author.image)
 
         Spacer(modifier = Modifier.width(10.dp))
 
@@ -58,7 +59,8 @@ private fun AuthorView(post: ResponseItem) {
             post.post.author.name,
             fontSize = 17.sp,
             color = AppColor.AppPrimaryFontColor,
-            fontFamily = Montserrat
+            fontFamily = Montserrat,
+            fontWeight = FontWeight.Bold
         )
 
         Spacer(modifier = Modifier.width(10.dp))
@@ -118,23 +120,3 @@ private fun PostDateView(post: ResponseItem) {
 
 }
 
-@ExperimentalCoilApi
-@Composable
-fun AuthorImage(
-    post: ResponseItem
-) {
-    val context = LocalContext.current
-    Box(
-        modifier = Modifier
-            .size(48.dp)
-            .clip(CircleShape)
-    ) {
-        val imageRes = ImageResource.getIdentifier(context, post.post.author.image)
-        Image(
-            painter = rememberImagePainter(imageRes),
-            post.post.author.name,
-            Modifier.fillMaxSize(),
-            contentScale = ContentScale.Fit
-        )
-    }
-}
