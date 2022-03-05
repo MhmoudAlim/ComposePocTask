@@ -12,7 +12,8 @@
         "sample_image"
       ],
       "post_footer": {
-        "title": "consectetur commodo ad",
+        "image" : "rest_1",
+        "title": "Chicken Chester",
         "category": "Mcdonald's"
       },
       "statistics": {
@@ -48,8 +49,9 @@
         "sample1"
       ],
       "post_footer": {
+        "image" : "ic_restaurant_icon",
         "title": "excepteur Lorem",
-        "category": "cafe & restaurants"
+        "category": "Cafe & restaurants"
       },
       "statistics": {
         "likes_numbers": 282,
@@ -84,8 +86,9 @@
         "sample2"
       ],
       "post_footer": {
-        "title": "quis aliqua ex qui",
-        "category": "cafe & restaurants"
+        "image" : "rest_2",
+        "title": "Quis Apple",
+        "category": "Cafe & restaurants"
       },
       "statistics": {
         "likes_numbers": 528,
@@ -129,8 +132,9 @@
         "sample3"
       ],
       "post_footer": {
-        "title": "nostrud enim labore Lorem magna",
-        "category": "cafe & restaurants"
+        "image" : "ic_restaurant_icon",
+        "title": "Chicken Kopple",
+        "category": "Cafe & restaurants"
       },
       "statistics": {
         "likes_numbers": 609,
@@ -174,8 +178,9 @@
         "sample_image"
       ],
       "post_footer": {
-        "title": "nostrud enim labore Lorem magna",
-        "category": "cafe & restaurants"
+        "image" : "ic_restaurant_icon",
+        "title" : "Mcdonald's",
+        "category": "Cafe & restaurants"
       },
       "statistics": {
         "likes_numbers": 56,
@@ -210,8 +215,9 @@
         "sample_image"
       ],
       "post_footer": {
-        "title": "nostrud enim labore Lorem magna",
-        "category": "cafe & restaurants"
+        "image" : "ic_restaurant_icon",
+        "title": "nostrud enim",
+        "category": "Cafe & restaurants"
       },
       "statistics": {
         "likes_numbers": 56,
@@ -242,8 +248,9 @@
           "sample_image"
         ],
         "post_footer": {
-          "title": "nostrud enim labore Lorem magna",
-          "category": "cafe & restaurants"
+          "image" : "ic_restaurant_icon",
+          "title": "Lorem magna",
+          "category": "Cafe & restaurants"
         },
         "statistics": {
           "likes_numbers": 56,
