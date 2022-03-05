@@ -1,4 +1,4 @@
-package com.mahmoudalim.composepoctask.ui.compose
+package com.mahmoudalim.core.util
 
 import android.content.Context
 
