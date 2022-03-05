@@ -3,25 +3,22 @@ package com.mahmoudalim.composepoctask.ui.compose
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.annotation.ExperimentalCoilApi
-import coil.compose.rememberImagePainter
 import com.mahmoudalim.composepoctask.R
 import com.mahmoudalim.presentation.theme.Montserrat
 import com.mahmoudalim.core.date.AppDate
 import com.mahmoudalim.data.enums.AuthorType.*
 import com.mahmoudalim.data.models.ResponseItem
+import com.mahmoudalim.presentation.compose.AppProfileImage
 import com.mahmoudalim.presentation.theme.color.AppColor
 
 /**

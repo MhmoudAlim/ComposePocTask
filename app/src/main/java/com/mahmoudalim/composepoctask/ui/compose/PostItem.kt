@@ -18,7 +18,7 @@ fun PostItem(post: ResponseItem) {
         Spacer(modifier = Modifier.height(12.dp))
         PostHeader(post)
         PostContent(post)
-        PostFooter(post)
+        PostFooterView(post)
         Spacer(modifier = Modifier.height(12.dp))
     }
 }

@@ -15,6 +15,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.annotation.ExperimentalCoilApi
 import coil.compose.rememberImagePainter
+import com.mahmoudalim.core.util.ImageResource
 import com.mahmoudalim.presentation.theme.Montserrat
 import com.mahmoudalim.data.models.ResponseItem
 import com.mahmoudalim.presentation.theme.color.AppColor
