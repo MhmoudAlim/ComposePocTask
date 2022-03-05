@@ -12,7 +12,7 @@
         "sample_image"
       ],
       "post_footer": {
-        "image" : "rest_1",
+        "image": "rest_1",
         "title": "Chicken Chester",
         "category": "Mcdonald's"
       },
@@ -49,7 +49,7 @@
         "sample1"
       ],
       "post_footer": {
-        "image" : "ic_restaurant_icon",
+        "image": "ic_restaurant_icon",
         "title": "excepteur Lorem",
         "category": "Cafe & restaurants"
       },
@@ -86,7 +86,7 @@
         "sample2"
       ],
       "post_footer": {
-        "image" : "rest_2",
+        "image": "rest_2",
         "title": "Quis Apple",
         "category": "Cafe & restaurants"
       },
@@ -95,26 +95,7 @@
         "comments_numbers": 13,
         "shares_numbers": 166,
         "created_at": "2022-03-05 03:15:11",
-        "comments": [
-          {
-            "description": "pariatur voluptate esse occaecat culpa",
-            "created_at": "2022-03-06 16:25:21",
-            "user": {
-              "user_name": "Kevin Malone",
-              "photo": "person_3"
-            },
-            "likes": 2
-          },
-          {
-            "description": "anim ea",
-            "created_at": "2022-02-27 14:41:19",
-            "user": {
-              "user_name": "Dwight Schrute",
-              "photo": "person_2"
-            },
-            "likes": 1
-          }
-        ]
+        "comments": []
       },
       "nested_post": {}
     }
@@ -132,7 +113,7 @@
         "sample3"
       ],
       "post_footer": {
-        "image" : "ic_restaurant_icon",
+        "image": "ic_restaurant_icon",
         "title": "Chicken Kopple",
         "category": "Cafe & restaurants"
       },
@@ -178,8 +159,8 @@
         "sample_image"
       ],
       "post_footer": {
-        "image" : "ic_restaurant_icon",
-        "title" : "Mcdonald's",
+        "image": "ic_restaurant_icon",
+        "title": "Mcdonald's",
         "category": "Cafe & restaurants"
       },
       "statistics": {
@@ -215,7 +196,7 @@
         "sample_image"
       ],
       "post_footer": {
-        "image" : "ic_restaurant_icon",
+        "image": "ic_restaurant_icon",
         "title": "nostrud enim",
         "category": "Cafe & restaurants"
       },
@@ -224,17 +205,7 @@
         "comments_numbers": 22,
         "shares_numbers": 32,
         "created_at": "2022-03-03 03:12:35",
-        "comments": [
-          {
-            "description": "consequat ad do qui voluptate incididunt Lorem incididunt minim consequat",
-            "created_at": "2022-03-05 23:25:33",
-            "user": {
-              "user_name": "Mahmoud Alim",
-              "photo": "person_3"
-            },
-            "likes": 1
-          }
-        ]
+        "comments": []
       },
       "nested_post": {
         "type": "single",
@@ -248,7 +219,7 @@
           "sample_image"
         ],
         "post_footer": {
-          "image" : "ic_restaurant_icon",
+          "image": "ic_restaurant_icon",
           "title": "Lorem magna",
           "category": "Cafe & restaurants"
         },
@@ -257,17 +228,7 @@
           "comments_numbers": 22,
           "shares_numbers": 32,
           "created_at": "2022-03-02 03:12:35",
-          "comments": [
-            {
-              "description": "consequat ad do qui voluptate incididunt Lorem incididunt minim consequat",
-              "created_at": "2022-03-03 23:25:33",
-              "user": {
-                "user_name": "Mahmoud Alim",
-                "photo": "person_3"
-              },
-              "likes": 1
-            }
-          ]
+          "comments": []
         }
       }
     }

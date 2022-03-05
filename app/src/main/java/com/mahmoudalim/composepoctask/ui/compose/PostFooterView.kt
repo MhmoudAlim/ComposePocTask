@@ -25,16 +25,16 @@ fun PostFooterView(post: ResponseItem) {
     Column(
         Modifier
             .fillMaxWidth()
-            .padding(16.dp)
+            .padding(horizontal = 16.dp, vertical = 12.dp)
     ) {
-        PostFooterTypeView(post)
-        PostFooterStatistics(post)
+        PostFooterDescriptionView(post)
+        PostFooterStatisticsView(post)
     }
 
 }
 
 @Composable
-fun PostFooterTypeView(post: ResponseItem) {
+fun PostFooterDescriptionView(post: ResponseItem) {
     Row() {
         AppProfileImage(post.post.postFooter.image)
 
@@ -60,10 +60,10 @@ fun PostFooterTypeView(post: ResponseItem) {
                 fontWeight = FontWeight.Light
             )
         }
-        
+
 
     }
-    if(post.post.author.authorType == AuthorType.RESTAURANT){
+    if (post.post.author.authorType == AuthorType.RESTAURANT) {
         Button(onClick = { /*TODO*/ }) {
 
         }
@@ -71,16 +71,7 @@ fun PostFooterTypeView(post: ResponseItem) {
 
 }
 
-@Composable
-private fun PostFooterStatistics(post: ResponseItem) {
-    Row(
-        Modifier
-            .fillMaxWidth(),
-        verticalAlignment = Alignment.CenterVertically,
-        horizontalArrangement = Arrangement.SpaceBetween
-    ) {
-        Text(text = "${post.post.statistics.likesNumbers}")
-        Text(text = "${post.post.statistics.commentsNumbers}")
-        Text(text = "${post.post.statistics.sharesNumbers}")
-    }
-}
+
+
+
+
