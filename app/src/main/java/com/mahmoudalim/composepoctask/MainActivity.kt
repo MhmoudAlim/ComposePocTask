@@ -11,11 +11,13 @@ import com.mahmoudalim.composepoctask.navigation.navigate
 import com.mahmoudalim.composepoctask.ui.screens.HomeScreen
 import com.mahmoudalim.composepoctask.ui.screens.SkeletonScreen
 import com.mahmoudalim.composepoctask.ui.theme.ComposePocTaskTheme
-import com.mahmoudalim.core.navigation.Route
+import com.mahmoudalim.composepoctask.navigation.Route
 import com.mahmoudalim.presentation.compose.AppScaffoldHome
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainActivity : ComponentActivity() {
 
+    private val vm: MainViewModel by viewModel()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,7 +34,7 @@ class MainActivity : ComponentActivity() {
                             SkeletonScreen(onNavigate = navController::navigate)
                         }
                         composable(Route.HOME) {
-                            HomeScreen()
+                            HomeScreen(vm)
                         }
                     }
                 }
