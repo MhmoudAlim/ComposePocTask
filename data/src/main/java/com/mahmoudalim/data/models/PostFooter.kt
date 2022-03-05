@@ -7,5 +7,7 @@ data class PostFooter(
     @SerializedName("category")
     val category: String,
     @SerializedName("title")
-    val title: String
+    val title: String,
+    @SerializedName("image")
+    val image: String,
 )
