@@ -3,7 +3,9 @@ package com.mahmoudalim.composepoctask
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.runtime.Composable
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -26,18 +28,23 @@ class MainActivity : ComponentActivity() {
             ComposePocTaskTheme {
                 val navController = rememberNavController()
                 AppScaffoldHome {
-                    NavHost(
-                        navController = navController,
-                        startDestination = Route.SKELETON
-                    ) {
-                        composable(Route.SKELETON) {
-                            SkeletonScreen(onNavigate = navController::navigate)
-                        }
-                        composable(Route.HOME) {
-                            HomeScreen(vm)
-                        }
-                    }
+                    AppScaffoldContent(navController)
                 }
+            }
+        }
+    }
+
+    @Composable
+    private fun AppScaffoldContent(navController: NavHostController) {
+        NavHost(
+            navController = navController,
+            startDestination = Route.SKELETON
+        ) {
+            composable(Route.SKELETON) {
+                SkeletonScreen(onNavigate = navController::navigate)
+            }
+            composable(Route.HOME) {
+                HomeScreen(vm)
             }
         }
     }
