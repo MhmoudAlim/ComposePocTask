@@ -17,6 +17,7 @@ import androidx.compose.ui.unit.sp
 import coil.annotation.ExperimentalCoilApi
 import coil.compose.rememberImagePainter
 import com.mahmoudalim.composepoctask.R
+import com.mahmoudalim.presentation.theme.Montserrat
 import com.mahmoudalim.core.date.AppDate
 import com.mahmoudalim.data.enums.AuthorType.*
 import com.mahmoudalim.data.models.ResponseItem
@@ -53,7 +54,12 @@ fun PostHeader(post: ResponseItem) {
 private fun AuthorView(post: ResponseItem) {
     Row(verticalAlignment = Alignment.CenterVertically) {
 
-        Text(post.post.author.name, fontSize = 17.sp, color = AppColor.AppPrimaryFontColor)
+        Text(
+            post.post.author.name,
+            fontSize = 17.sp,
+            color = AppColor.AppPrimaryFontColor,
+            fontFamily = Montserrat
+        )
 
         Spacer(modifier = Modifier.width(10.dp))
 
@@ -93,12 +99,14 @@ private fun PostDateView(post: ResponseItem) {
             Text(
                 "Verified Buyer",
                 fontSize = 15.sp,
-                color = AppColor.AppPrimaryFontColor.copy(.5f)
+                color = AppColor.AppPrimaryFontColor.copy(.5f),
+                fontFamily = Montserrat
             )
             Text(
                 ".",
                 fontSize = 15.sp,
-                color = AppColor.AppPrimaryFontColor.copy(.5f)
+                color = AppColor.AppPrimaryFontColor.copy(.5f),
+                fontFamily = Montserrat
             )
         }
         Text(

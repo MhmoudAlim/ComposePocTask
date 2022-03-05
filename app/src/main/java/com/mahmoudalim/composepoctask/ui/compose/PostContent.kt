@@ -15,6 +15,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.annotation.ExperimentalCoilApi
 import coil.compose.rememberImagePainter
+import com.mahmoudalim.presentation.theme.Montserrat
 import com.mahmoudalim.data.models.ResponseItem
 import com.mahmoudalim.presentation.theme.color.AppColor
 
@@ -33,8 +34,12 @@ fun PostContent(
             .fillMaxWidth()
             .background(Color.White)
     ) {
-        //TODO: Add font family
-        val textStyle = TextStyle(fontSize = 16.sp, color = AppColor.AppPrimaryFontColor)
+        val textStyle =
+            TextStyle(
+                fontSize = 14.sp,
+                color = AppColor.AppPrimaryFontColor,
+                fontFamily = Montserrat
+            )
         Text(
             text = post.post.postDescription,
             modifier = Modifier.padding(vertical = 8.dp, horizontal = 16.dp),
