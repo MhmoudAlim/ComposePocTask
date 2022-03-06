@@ -1,4 +1,4 @@
-package com.mahmoudalim.composepoctask
+package com.mahmoudalim.composepoctask.ui.vm
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf

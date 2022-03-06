@@ -7,13 +7,12 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.material.AppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.mahmoudalim.composepoctask.MainViewModel
 import com.mahmoudalim.composepoctask.ui.compose.PostItem
+import com.mahmoudalim.composepoctask.ui.vm.MainViewModel
 import com.mahmoudalim.presentation.compose.AppSearchBar
 import com.mahmoudalim.data.models.Response
 import com.mahmoudalim.presentation.theme.color.AppColor

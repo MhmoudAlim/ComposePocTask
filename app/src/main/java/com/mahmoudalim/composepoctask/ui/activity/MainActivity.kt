@@ -1,4 +1,4 @@
-package com.mahmoudalim.composepoctask
+package com.mahmoudalim.composepoctask.ui.activity
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -14,6 +14,7 @@ import com.mahmoudalim.composepoctask.ui.screens.HomeScreen
 import com.mahmoudalim.composepoctask.ui.screens.SkeletonScreen
 import com.mahmoudalim.composepoctask.ui.theme.ComposePocTaskTheme
 import com.mahmoudalim.composepoctask.navigation.Route
+import com.mahmoudalim.composepoctask.ui.vm.MainViewModel
 import com.mahmoudalim.presentation.compose.AppScaffoldHome
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
