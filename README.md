@@ -4,9 +4,19 @@
 
 ---------
 
+# Table of contents
 
-### Implementation Details
-- Clean Architecture
+
+- [Implementation Details](#implementation-details--technologies-used)
+- [Why Modular](#why-modular-architecture-)
+- [Preview](#preview)
+
+---------
+
+
+### Implementation Details & technologies used
+
+- Modular Clean Architecture
 - Dependency Injection using Koin
 - AndroidX
 - Jetpack Compose
@@ -19,6 +29,7 @@
 - Java ThreeTen
 
 
+---------
 
 # Why Modular Architecture ?
 
@@ -33,6 +44,8 @@
 - Improves Manageability
 
 <br/>
+
+---------
 
 ## Preview
 
