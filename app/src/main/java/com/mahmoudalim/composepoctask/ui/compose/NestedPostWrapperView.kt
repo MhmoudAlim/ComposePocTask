@@ -44,7 +44,10 @@ fun NestedPostWrapperView(
             )
         Text(
             text = post.post.postDescription,
-            modifier = Modifier.padding(vertical = spacing.spaceExtraSmall, horizontal = spacing.spaceMedium),
+            modifier = Modifier.padding(
+                vertical = spacing.spaceExtraSmall,
+                horizontal = spacing.spaceMedium
+            ),
             style = textStyle
         )
         Card(
@@ -55,6 +58,17 @@ fun NestedPostWrapperView(
             border = BorderStroke(1.dp, color = AppColor.BoxBorderColor)
         ) {
             NestedPostView(post)
+        }
+        Column(
+            Modifier
+                .fillMaxWidth()
+                .padding(
+                    horizontal = 16.dp
+                )
+        ) {
+            PostFooterStatisticsView(post)
+            if (post.post.nestedPost.statistics.comments.isNotEmpty())
+                PostFooterCommentsSectionView(post.post.nestedPost.statistics.comments)
         }
     }
 }

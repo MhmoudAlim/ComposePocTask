@@ -26,6 +26,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.mahmoudalim.presentation.R
+import com.mahmoudalim.presentation.dimensions.LocalSpacing
 import com.mahmoudalim.presentation.theme.Montserrat
 import com.mahmoudalim.presentation.theme.color.AppColor
 
@@ -33,11 +34,13 @@ import com.mahmoudalim.presentation.theme.color.AppColor
 @Composable
 fun AppSearchBar() {
     val userInput = remember { mutableStateOf("") }
+    val spacing = LocalSpacing.current
+
     Box(
         Modifier
             .fillMaxWidth()
             .wrapContentHeight()
-            .padding(vertical = 13.dp, horizontal = 16.dp)
+            .padding(vertical = 13.dp, horizontal = spacing.spaceMedium)
     ) {
         Row(
             verticalAlignment = Alignment.CenterVertically,
