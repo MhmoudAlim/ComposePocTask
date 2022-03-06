@@ -10,17 +10,17 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.mahmoudalim.composepoctask.navigation.navigate
-import com.mahmoudalim.composepoctask.ui.screens.HomeScreen
-import com.mahmoudalim.composepoctask.ui.screens.SkeletonScreen
+import com.mahmoudalim.composepoctask.ui.screens.home.screen.HomeScreen
+import com.mahmoudalim.composepoctask.ui.screens.skeleton.SkeletonScreen
 import com.mahmoudalim.composepoctask.ui.theme.ComposePocTaskTheme
 import com.mahmoudalim.composepoctask.navigation.Route
-import com.mahmoudalim.composepoctask.ui.vm.MainViewModel
+import com.mahmoudalim.composepoctask.ui.screens.home.vm.HomeScreenViewModel
 import com.mahmoudalim.presentation.compose.AppScaffoldHome
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainActivity : ComponentActivity() {
 
-    private val vm: MainViewModel by viewModel()
+    private val vm: HomeScreenViewModel by viewModel()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

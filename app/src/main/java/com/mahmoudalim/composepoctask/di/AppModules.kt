@@ -1,6 +1,6 @@
 package com.mahmoudalim.composepoctask.di
 
-import com.mahmoudalim.composepoctask.ui.vm.mainViewModel
+import com.mahmoudalim.composepoctask.ui.screens.home.vm.mainViewModel
 import org.koin.core.context.loadKoinModules
 
 /**

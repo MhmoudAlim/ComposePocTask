@@ -1,4 +1,4 @@
-package com.mahmoudalim.composepoctask.ui.screens
+package com.mahmoudalim.composepoctask.ui.screens.skeleton
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
