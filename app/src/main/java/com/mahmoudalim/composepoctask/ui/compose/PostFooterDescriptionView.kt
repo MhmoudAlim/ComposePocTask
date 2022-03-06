@@ -17,6 +17,7 @@ import com.mahmoudalim.data.enums.AuthorType
 import com.mahmoudalim.data.models.ResponseItem
 import com.mahmoudalim.presentation.compose.AppGradientButton
 import com.mahmoudalim.presentation.compose.AppProfileImage
+import com.mahmoudalim.presentation.dimensions.LocalSpacing
 import com.mahmoudalim.presentation.theme.Montserrat
 import com.mahmoudalim.presentation.theme.color.AppColor
 
@@ -27,13 +28,14 @@ import com.mahmoudalim.presentation.theme.color.AppColor
 
 @Composable
 fun PostFooterDescriptionView(post: ResponseItem) {
+    val spacing = LocalSpacing.current
     Row() {
         AppProfileImage(post.post.postFooter.image)
 
         Spacer(modifier = Modifier.width(10.dp))
 
         Column(
-            verticalArrangement = Arrangement.spacedBy(4.dp),
+            verticalArrangement = Arrangement.spacedBy(spacing.spaceExtraSmall),
             horizontalAlignment = Alignment.Start
         ) {
             Text(

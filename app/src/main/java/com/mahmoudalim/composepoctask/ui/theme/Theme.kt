@@ -3,6 +3,9 @@ package com.mahmoudalim.composepoctask.ui.theme
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
+import com.mahmoudalim.presentation.dimensions.Dimensions
+import com.mahmoudalim.presentation.dimensions.LocalSpacing
 
 
 private val LightColorPalette = lightColors(
@@ -26,10 +29,12 @@ fun ComposePocTaskTheme(
     content: @Composable() () -> Unit
 ) {
 
-    MaterialTheme(
-        colors = LightColorPalette,
-        typography = Typography,
-        shapes = Shapes,
-        content = content
-    )
+    CompositionLocalProvider(LocalSpacing provides Dimensions()) {
+        MaterialTheme(
+            colors = LightColorPalette,
+            typography = Typography,
+            shapes = Shapes,
+            content = content
+        )
+    }
 }

@@ -15,6 +15,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.mahmoudalim.data.models.ResponseItem
+import com.mahmoudalim.presentation.dimensions.LocalSpacing
 import com.mahmoudalim.presentation.theme.Montserrat
 import com.mahmoudalim.presentation.theme.color.AppColor
 
@@ -26,6 +27,8 @@ fun NestedPostWrapperView(
     post: ResponseItem,
     NestedPostView: @Composable() (post: ResponseItem) -> Unit
 ) {
+    val spacing = LocalSpacing.current
+
     PostHeader(post)
 
     Column(
@@ -41,14 +44,14 @@ fun NestedPostWrapperView(
             )
         Text(
             text = post.post.postDescription,
-            modifier = Modifier.padding(vertical = 8.dp, horizontal = 16.dp),
+            modifier = Modifier.padding(vertical = spacing.spaceExtraSmall, horizontal = spacing.spaceMedium),
             style = textStyle
         )
         Card(
             Modifier
-                .padding(16.dp)
+                .padding(spacing.spaceLarge)
                 .fillMaxWidth(),
-            shape = RoundedCornerShape(8.dp),
+            shape = RoundedCornerShape(spacing.spaceExtraSmall),
             border = BorderStroke(1.dp, color = AppColor.BoxBorderColor)
         ) {
             NestedPostView(post)

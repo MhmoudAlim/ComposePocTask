@@ -12,6 +12,7 @@ import androidx.compose.ui.unit.dp
 import com.mahmoudalim.data.enums.PostType.NESTED
 import com.mahmoudalim.data.enums.PostType.SINGLE
 import com.mahmoudalim.data.models.ResponseItem
+import com.mahmoudalim.presentation.dimensions.LocalSpacing
 
 @Composable
 fun PostItem(post: ResponseItem) {
@@ -27,9 +28,11 @@ fun PostItem(post: ResponseItem) {
 
 @Composable
 private fun SinglePostItemView(post: ResponseItem) {
+    val spacing = LocalSpacing.current
+
     Column(
         Modifier
-            .padding(bottom = 4.dp)
+            .padding(bottom = spacing.spaceExtraSmall)
             .background(Color.White)
     ) {
         Spacer(modifier = Modifier.height(12.dp))

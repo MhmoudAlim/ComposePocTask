@@ -6,6 +6,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.mahmoudalim.data.models.ResponseItem
+import com.mahmoudalim.presentation.dimensions.LocalSpacing
 
 /**
  * Created by Mahmoud Alim on 05/03/2022.
@@ -13,10 +14,12 @@ import com.mahmoudalim.data.models.ResponseItem
 
 @Composable
 fun PostFooterView(post: ResponseItem) {
+    val spacing = LocalSpacing.current
+
     Column(
         Modifier
             .fillMaxWidth()
-            .padding(top = 12.dp, start = 16.dp , end = 16.dp)
+            .padding(top = 12.dp, start = spacing.spaceMedium , end = 16.dp)
     ) {
         PostFooterDescriptionView(post)
         PostFooterStatisticsView(post)

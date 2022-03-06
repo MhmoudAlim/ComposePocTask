@@ -15,6 +15,7 @@ import com.mahmoudalim.composepoctask.ui.compose.PostItem
 import com.mahmoudalim.composepoctask.ui.vm.MainViewModel
 import com.mahmoudalim.presentation.compose.AppSearchBar
 import com.mahmoudalim.data.models.Response
+import com.mahmoudalim.presentation.dimensions.LocalSpacing
 import com.mahmoudalim.presentation.theme.color.AppColor
 
 /**
@@ -34,13 +35,15 @@ fun HomeScreen(vm: MainViewModel) {
 
 @Composable
 private fun HomeScreenContent(response: Response) {
+    val spacing = LocalSpacing.current
+
     Column(Modifier.fillMaxSize()) {
         AppSearchBar()
         LazyColumn(
-            contentPadding = PaddingValues(bottom = 56.dp),
+            contentPadding = PaddingValues(bottom = spacing.spaceExtraLarge),
             modifier = Modifier
                 .background(AppColor.AppGrayBGColor.copy(0.5f))
-                .padding(top = 4.dp)
+                .padding(top = spacing.spaceExtraSmall)
         ) {
             items(response) {
                 PostItem(it)

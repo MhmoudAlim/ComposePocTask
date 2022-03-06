@@ -13,6 +13,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.mahmoudalim.composepoctask.R
 import com.mahmoudalim.data.models.ResponseItem
+import com.mahmoudalim.presentation.dimensions.LocalSpacing
 import com.mahmoudalim.presentation.theme.color.AppColor
 
 /**
@@ -21,7 +22,8 @@ import com.mahmoudalim.presentation.theme.color.AppColor
 
 @Composable
 fun PostFooterStatisticsView(post: ResponseItem) {
-    Box(modifier = Modifier.padding(vertical = 8.dp)) {
+    val spacing = LocalSpacing.current
+    Box(modifier = Modifier.padding(vertical = spacing.spaceSmall)) {
         Column(horizontalAlignment = Alignment.CenterHorizontally) {
             Divider(color = AppColor.DividerColor, thickness = 0.8.dp)
             Row(
@@ -44,11 +46,12 @@ fun PostFooterStatisticsView(post: ResponseItem) {
 @Composable
 private fun LikesView(likes: Int) {
     var likesNumbers by remember { mutableStateOf(likes) }
+    val spacing = LocalSpacing.current
 
     Row(
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier.clickable { likesNumbers++ }) {
-        Text(text = "$likesNumbers", modifier = Modifier.padding(end = 4.dp))
+        Text(text = "$likesNumbers", modifier = Modifier.padding(end = spacing.spaceExtraSmall))
         Image(
             painter = painterResource(id = R.drawable.ic_likes),
             contentDescription = stringResource(
@@ -60,8 +63,10 @@ private fun LikesView(likes: Int) {
 
 @Composable
 private fun CommentsView(commentsNumbers: Int) {
+    val spacing = LocalSpacing.current
+
     Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.clickable { }) {
-        Text(text = "$commentsNumbers", modifier = Modifier.padding(end = 4.dp))
+        Text(text = "$commentsNumbers", modifier = Modifier.padding(end = spacing.spaceExtraSmall))
         Image(
             painter = painterResource(id = R.drawable.ic_comments),
             contentDescription = stringResource(
@@ -73,8 +78,10 @@ private fun CommentsView(commentsNumbers: Int) {
 
 @Composable
 private fun SharesView(sharesNumbers: Int) {
+    val spacing = LocalSpacing.current
+
     Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.clickable { }) {
-        Text(text = "$sharesNumbers", modifier = Modifier.padding(end = 4.dp))
+        Text(text = "$sharesNumbers", modifier = Modifier.padding(end = spacing.spaceExtraSmall))
         Image(
             painter = painterResource(id = R.drawable.ic_shares),
             contentDescription = stringResource(
