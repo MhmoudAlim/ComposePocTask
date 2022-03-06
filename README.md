@@ -10,6 +10,7 @@
 - [Implementation Details](#implementation-details--technologies-used)
 - [Why Modular](#why-modular-architecture-)
 - [Preview](#preview)
+- [Demo](#demo)
 
 ---------
 
@@ -62,7 +63,7 @@
 
 <br/>
 
-## Usage
+## Demo
 Download App sample : [Qurba App](https://github.com/MhmoudAlim/ComposePocTask/raw/master/blob/app-debug.apk)
 
 
