@@ -54,7 +54,7 @@ fun NestedPostWrapperView(
             Modifier
                 .padding(spacing.spaceLarge)
                 .fillMaxWidth(),
-            shape = RoundedCornerShape(spacing.spaceExtraSmall),
+            shape = RoundedCornerShape(spacing.spaceSmall),
             border = BorderStroke(1.dp, color = AppColor.BoxBorderColor)
         ) {
             NestedPostView(post)
